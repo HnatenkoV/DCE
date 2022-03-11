@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.container {
+    max-width: 1188px;
+    margin: auto;
+}
+
+.d_flex {
+    display: flex;
+}
+.jc_sb {
+    justify-content: space-between;
+}
+.jc_se {
+    justify-content: space-evenly;
+}
+.jc_sa {
+    justify-content: space-around;
+}
+.ai_c {
+    align-items: center;
+}
+
+.d_ib {
+    display: inline-block;
+}
+
+/* header */
+nav ol {
+    display: flex;
+    list-style: none;
+}
+
+nav ol li {
+    margin: 0 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 10px;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* intro */
+.intro {
+    position: relative;
+    background: url("../image/background.jpg");
+    background-size: cover;
+    padding: 170px 0 34px 0;
+}
+
+h1 {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 73px;
+    color: #ffffff;
+    margin-bottom: 30px
+}
+
+article {
+    display: flex;
+    margin-bottom: 99px;
+    max-width: 512px;
+    background: #FFFFFF;
+    opacity: 0.9; border-radius: 20px;
+}
+
+article img {
+    padding: 46px 28px 42px 33px;
+}
+
+article p {
+    margin: 0 auto;
+    padding: 38px 33px 34px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.intro_btn {
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 0 0 166px rgba(0, 0, 0, 0.2), 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 49px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration:none;
+    border: none;
+    cursor: pointer;
+}
+
+/* about Us */
+.about_us {
+    padding: 20px 0 180px;
+    background-image: url("../image/img_1.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.circles_img {
+    width: 100%;
+    display: block;
+    margin-bottom: 180px;
+}
+
+.about_us h2 {
+    margin-bottom: 60px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+.about_us_text{
+    margin-bottom: 158px;
+}
+
+section .about_us_text p {
+    max-width: 380px;
+    margin-bottom: 20px;
+    font-weight:300;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+section .about_us_text span{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+
+/* Why are we */
+
+.why_are_we {
+    background-color: #4C6071;
+    padding: 60px 0;
+}
+
+.why_are_we h2 {
+    padding-left: 140px;
+    margin-bottom: 67px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.advantage {
+    max-width: 255px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.why_are_we .d_flex.jc_se {
+    margin-bottom: 60px;
+}
+
+.advantage div {
+    padding: 50px 30px;
+}
+
+.advantage img {
+    display: block;
+    margin: 0 auto 68px;
+}
+
+.advantage p {
+    font-weight:500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #373737;
+}
+
+.advantage p span {
+    font-weight:300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #373737;
+}
+
+/* project discussion */
+
+.project_discussion {
+    padding: 20px 0 200px;
+}
+
+.project_discussion h3 {
+    margin-bottom: 15px;
+    font-family: 'Gothic A1', sans-serif; font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.project_discussion form div {
+    max-width: 392px;
+    padding: 15px 0;
+}
+
+.project_discussion form label {
+    display: none;
+}
+
+.project_discussion form input {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.project_discussion form textarea {
+    resize: none;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    height: 29px;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.order_btn {
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 0 0 166px rgba(0, 0, 0, 0.2), 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 49px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration:none;
+    border: none;
+    cursor: pointer;
+    margin-top: 45px;
+}
