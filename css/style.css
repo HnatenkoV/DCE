@@ -221,7 +221,7 @@ section .about_us_text span{
     }
 
 .portfolio h2 {
-    font-family: 'Gothic A1';
+    font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
@@ -313,7 +313,7 @@ section .about_us_text span{
 .estimated_cost h3{
     padding: 30px;
     max-width: 790px;
-    font-family: 'Gothic A1';
+    font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
@@ -329,7 +329,7 @@ section .about_us_text span{
 }
 
 .services_intro p {
-    font-family: 'Gothic A1';
+    font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
@@ -444,7 +444,7 @@ section .about_us_text span{
 }
 
 .catalog h3 {
-    font-family: 'Gothic A1';
+    font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
@@ -506,7 +506,7 @@ section .about_us_text span{
 }
 
 .reviews h2 {
-    font-family: 'Gothic A1';
+    font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -559,36 +559,16 @@ section .about_us_text span{
     color: #FFFFFF;
 }
 
-.play img {
-    height: 100px;
-    width: 81px;
-    position: absolute;
-    top: 75px;
-    left: 85px;
+.play {
+    position: relative;
 }
 
-.play_2 img {
-    height: 100px;
-    width: 81px;
+.play:after {
+    content: url("../image/play.svg");
     position: absolute;
-    top: 75px;
-    left: 400px;
-}
-
-.play_3 img {
-    height: 100px;
-    width: 81px;
-    position: absolute;
-    top: 75px;
-    left: 710px;
-}
-
-.play_4 img {
-    height: 100px;
-    width: 81px;
-    position: absolute;
-    top: 75px;
-    left: 1025px;
+    top: 85px;
+    left: 90px;
+    cursor: pointer;
 }
 
 /* project discussion */
@@ -599,7 +579,8 @@ section .about_us_text span{
 
 .project_discussion h3 {
     margin-bottom: 15px;
-    font-family: 'Gothic A1', sans-serif; font-weight: 400;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
@@ -656,4 +637,94 @@ section .about_us_text span{
     box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     transition: .3s;
+}
+
+/* footer */
+
+footer {
+    padding: 50px 0 50px 0;
+    background-image: url("../image/bg-points.jpg");
+}
+
+.footer_contacts h5 {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.footer_contacts p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.footer_contacts img {
+    margin-right: 24px;
+}
+
+.footer_mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_mail p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer_mail a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.map {
+    position: relative;
+    height: 146px;
+    width: 540px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.map:before {
+    position: absolute;
+    content: "Нажмите чтобы посмотреть на карте";
+    display: block;
+    top: 40px;
+    left: 110px;
+    z-index: 2;
+    max-width: 330px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.map:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .6;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
