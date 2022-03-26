@@ -72,6 +72,8 @@ header ul li {
 /* intro */
 .intro {
     position: relative;
+    box-sizing: border-box;
+    height: 100vh;
     background: url("../image/background.jpg");
     background-size: cover;
     padding: 170px 0 34px 0;
@@ -299,9 +301,10 @@ section .about_us_text span{
     transition: .3s;
 }
 /* cost */
-.cost {
+.costs {
     background-image: url("../image/bg-points.jpg");
     padding: 60px 0;
+    display: block;
 }
 
 .estimated_cost {
@@ -344,13 +347,13 @@ section .about_us_text span{
     list-style: none;
 }
 
-.plaster {
+.plaster, .plaster_1, .plaster_2, .plaster_3, .plaster_4, .plaster_5{
     background-color: #4C6071;
     border-radius: 20px;
     padding: 30px 50px 30px 30px;
 }
 
-.plaster ul {
+.plaster ul, .plaster_1 ul, .plaster_2 ul, .plaster_3 ul, .plaster_4 ul, .plaster_5 ul {
     margin-right: 30px;
 }
 
@@ -375,7 +378,13 @@ section .about_us_text span{
     border-radius: 50%;
     margin-left: 90px;
 }
-
+.plaster_1 li p, .plaster_2 li p, .plaster_3 li p, .plaster_4 li p, .plaster_5 li p {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    margin-left: 213px;
+}
 .plaster_types li a {
     text-decoration: none;
     max-width: 255px;
@@ -385,13 +394,34 @@ section .about_us_text span{
     line-height: 30px;
     color: #000000;
 }
-.plaster img {
+.plaster img, .plaster_1 img, .plaster_2 img,
+.plaster_4 img, .plaster_5 img{
     display: block;
     width: 610px;
     height: 230px;
     border-radius: 15px;
     margin-bottom: 10px;
 }
+
+.plaster_2 form div, .plaster_4 form div {
+    max-width: 392px;
+    padding: 15px 0;
+}
+
+.plaster_2 form label, .plaster_4 form label {
+    display: none;
+}
+
+.plaster_2 form input, .plaster_4 form input {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
 
 .back_btn {
     font-family: 'Roboto';
