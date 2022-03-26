@@ -378,12 +378,19 @@ section .about_us_text span{
     border-radius: 50%;
     margin-left: 90px;
 }
-.plaster_1 li p, .plaster_2 li p, .plaster_3 li p, .plaster_4 li p, .plaster_5 li p {
+.plaster_1 li p, .plaster_2 li p, .plaster_3 li p, .plaster_5 li p {
     width: 18px;
     height: 18px;
     border: 2px solid #000000;
     border-radius: 50%;
     margin-left: 213px;
+}
+.plaster_4 li p {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    margin-left: 119px;
 }
 .plaster_types li a {
     text-decoration: none;
